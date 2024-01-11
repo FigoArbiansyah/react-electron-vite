@@ -21,7 +21,7 @@ export default function ImgMediaCard({ item, onSave }) {
     >
       <CardMedia
         component="img"
-        alt="Product Image"
+        alt={item?.title}
         height="250"
         image={item?.thumbnail}
       />
