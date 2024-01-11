@@ -9,7 +9,9 @@ import { getSavedProducts } from "../helpers/localStorage";
 
 export default function ImgMediaCard({ item, onSave }) {
   const savedProducts = getSavedProducts();
-  const isIncluded = savedProducts.find((_product) => _product?.id == item?.id);
+  const isIncluded = savedProducts?.find(
+    (_product) => _product?.id == item?.id
+  );
   return (
     <Card
       style={{
